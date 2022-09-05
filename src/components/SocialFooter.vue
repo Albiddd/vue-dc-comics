@@ -39,44 +39,47 @@ export default {
 
     @import '../style/variables.scss';
 
-    .container{
+    section{
         background-color: $footer-bg;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px 1.5rem;
-        z-index: 999;
-
-        .btn{
-            background-color: transparent;
-            border: solid $main-color;
-            padding: 10px;
-            color: white;
-            font-weight: 600;
-            cursor: pointer;
-            transition: linear 0.2s;
-
-            &:hover{
-                background-color: $main-color;
-            }
-        }
-
-        .social-nav{
+        
+        .container{
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 1.5rem;
+            padding: 30px 1.5rem;
             z-index: 999;
-
-            .follow{
-                color: $main-color;
+    
+            .btn{
+                background-color: transparent;
+                border: solid $main-color;
+                padding: 10px;
+                color: white;
                 font-weight: 600;
-                font-size: 1.2rem;
-            }
-            .social-icon{
                 cursor: pointer;
+                transition: linear 0.2s;
+    
+                &:hover{
+                    background-color: $main-color;
+                }
             }
+    
+            .social-nav{
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                z-index: 999;
+    
+                .follow{
+                    color: $main-color;
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                }
+                .social-icon{
+                    cursor: pointer;
+                }
+            }
+    
         }
-
     }
 
 
