@@ -100,16 +100,16 @@ export default {
         }
         .nav ul{
             display: flex;
-            gap: 1.5rem;
             align-items: center;
             justify-content: center;
-            
+
             li{
                 font-weight: 600;
-                padding: 3.7rem 0;
+                padding: 3.7rem 0.9rem;
+                border-bottom: 5px solid transparent;
                 
                 &.active, &:hover{
-                    border-bottom: 5px solid $main-color;
+                    border-bottom-color: $main-color;
                 }
             }
         }
