@@ -1,0 +1,32 @@
+.container{
+    background-image: url('../assets/img/footer-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+
+
+    .footer-nav{
+        display: flex;
+        color: white;
+        flex-wrap: wrap;
+        width: 400px;
+        gap: 2rem;
+
+        ul{
+            flex-grow: 1;
+            flex-basis: calc(100% / 3 - 2rem) ;
+        }
+        h3{
+            padding: 15px 0 9px 0;
+        }
+        a{
+            font-size: 0.8rem;
+            font-weight: 300;
+            opacity: 0.6;
+        }
+    }
+}
+

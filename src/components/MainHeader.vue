@@ -96,7 +96,7 @@ export default {
    
         .logo{
             text-align: center;
-            padding: 1.5rem 0;
+            padding: 1.2rem 0;
         }
         .nav ul{
             display: flex;
@@ -106,9 +106,10 @@ export default {
             
             li{
                 font-weight: 600;
+                padding: 3.7rem 0;
                 
                 &.active, &:hover{
-                    border-bottom: 3px solid $main-color;
+                    border-bottom: 5px solid $main-color;
                 }
             }
         }
