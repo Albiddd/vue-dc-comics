@@ -22,11 +22,18 @@ export default {
 <style lang="scss" scoped>
 
     .card{
+        cursor: pointer;
+        width: 100%;
         .card-image{
-            width: 100%;
             height: 200px;
             aspect-ratio: 1;
             overflow: hidden;
+            
+            img{
+                width: 100%;
+                object-fit: contain;
+                display: block;
+            }
         }
         .card-text{
             padding: 10px 0;
@@ -34,5 +41,6 @@ export default {
             text-transform: uppercase;
         }
     }
+    
 
 </style>
