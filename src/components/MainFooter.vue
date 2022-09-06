@@ -36,7 +36,7 @@
 
             </div>
             <div class="logo">
-                <img src="../assets/img/dc-logo-bg.png" alt="">
+                <img :src="logo" alt="">
             </div>
         </div>
 
@@ -44,125 +44,127 @@
 </template>
 
 <script>
-export default {
-    name: 'MainFooter',
-    data() {
-        return{
-            ComicsLinks:[
-                {
-                text:"Characters",
-                url:"#",
-                },
-                {
-                text:"Comics",
-                url:"#",
-                },
-                {
-                text:"Movies",
-                url:"#",
-                },
-                {
-                text:"TV",
-                url:"#",
-                },
-                {
-                text:"Games",
-                url:"#",
-                },
-                {
-                text:"Collectibles",
-                url:"#",
-                },
-                {
-                text:"Videos",
-                url:"#",
-                },
-                {
-                text:"News",
-                url:"#",
-                }
-            ],
-            DcLinks:[
-                {
-                text:"Terms Of Use",
-                url:"#",
-                },
-                {
-                text:"Privacy policy(New)",
-                url:"#",
-                },
-                {
-                text:"Ad Choices",
-                url:"#",
-                },
-                {
-                text:"Advertisig",
-                url:"#",
-                },
-                {
-                text:"Jobs",
-                url:"#",
-                },
-                {
-                text:"Subscription",
-                url:"#",
-                },
-                {
-                text:"Talent Workshops",
-                url:"#",
-                },
-                {
-                text:"CPSC Certificates",
-                url:"#",
-                },
-                {
-                text:"Ratings",
-                url:"#",
-                },
-                {
-                text:"Shop Help",
-                url:"#",
-                },
-                {
-                text:"Contact Us",
-                url:"#",
-                }
-            ],
-            SitesLinks:[
-                {
-                text:"DC",
-                url:"#",
-                },
-                {
-                text:"MAD Magazine",
-                url:"#",
-                },
-                {
-                text:"DC Kids",
-                url:"#",
-                },
-                {
-                text:"DC Universe",
-                url:"#",
-                },
-                {
-                text:"DC Power Visa",
-                url:"#",
-                },            
-            ],
-            ShopLinks:[
-                {
-                text:"DC",
-                url:"#",
-                },
-                {
-                text:"MAD Magazine",
-                url:"#",
-                },       
-            ]
+    import logo from '../assets/img/dc-logo-bg.png';
+    export default {
+        name: 'MainFooter',
+        data() {
+            return{
+                logo,
+                ComicsLinks:[
+                    {
+                    text:"Characters",
+                    url:"#",
+                    },
+                    {
+                    text:"Comics",
+                    url:"#",
+                    },
+                    {
+                    text:"Movies",
+                    url:"#",
+                    },
+                    {
+                    text:"TV",
+                    url:"#",
+                    },
+                    {
+                    text:"Games",
+                    url:"#",
+                    },
+                    {
+                    text:"Collectibles",
+                    url:"#",
+                    },
+                    {
+                    text:"Videos",
+                    url:"#",
+                    },
+                    {
+                    text:"News",
+                    url:"#",
+                    }
+                ],
+                DcLinks:[
+                    {
+                    text:"Terms Of Use",
+                    url:"#",
+                    },
+                    {
+                    text:"Privacy policy(New)",
+                    url:"#",
+                    },
+                    {
+                    text:"Ad Choices",
+                    url:"#",
+                    },
+                    {
+                    text:"Advertisig",
+                    url:"#",
+                    },
+                    {
+                    text:"Jobs",
+                    url:"#",
+                    },
+                    {
+                    text:"Subscription",
+                    url:"#",
+                    },
+                    {
+                    text:"Talent Workshops",
+                    url:"#",
+                    },
+                    {
+                    text:"CPSC Certificates",
+                    url:"#",
+                    },
+                    {
+                    text:"Ratings",
+                    url:"#",
+                    },
+                    {
+                    text:"Shop Help",
+                    url:"#",
+                    },
+                    {
+                    text:"Contact Us",
+                    url:"#",
+                    }
+                ],
+                SitesLinks:[
+                    {
+                    text:"DC",
+                    url:"#",
+                    },
+                    {
+                    text:"MAD Magazine",
+                    url:"#",
+                    },
+                    {
+                    text:"DC Kids",
+                    url:"#",
+                    },
+                    {
+                    text:"DC Universe",
+                    url:"#",
+                    },
+                    {
+                    text:"DC Power Visa",
+                    url:"#",
+                    },            
+                ],
+                ShopLinks:[
+                    {
+                    text:"DC",
+                    url:"#",
+                    },
+                    {
+                    text:"MAD Magazine",
+                    url:"#",
+                    },       
+                ]
+            }
         }
     }
-}
 </script>
 
 <style lang="scss" scoped>

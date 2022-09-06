@@ -2,7 +2,7 @@
     <header>
         <div class="container">
             <div class="logo" >
-                <img src="../assets/img/dc-logo.png" alt="">
+                <img :src="logo" alt="">
             </div>
             <nav class="nav">
                <ul>
@@ -16,70 +16,76 @@
     
             </nav>            
         </div>
+        <div class="hero">
+        </div>
     </header>
 </template>
 
 
 <script>
-export default {
-  name: 'MainHeader',
-  data() {
-        return{
-            links:[
-                {
-                text:"CHARACTERS",
-                url:"#",
-                active: false
-                },
-                {
-                text:"COMICS",
-                url:"#",
-                active: true
-                },
-                {
-                text:"MOVIES",
-                url:"#",
-                active: false
-                },
-                {
-                text:"TV",
-                url:"#",
-                active: false
-                },
-                {
-                text:"GAMES",
-                url:"#",
-                active: false
-                },
-                {
-                text:"COLLECTIBLES",
-                url:"#",
-                active: false
-                },
-                {
-                text:"VIDEOS",
-                url:"#",
-                active: false
-                },
-                {
-                text:"FANS",
-                url:"#",
-                active: false
-                },
-                {
-                text:"NEWS",
-                url:"#",
-                active: false
-                },
-                {
-                text:"SHOP",
-                url:"#",
-                active: false
-                },
-            ]
+    
+    import logo from '../assets/img/dc-logo.png';
+
+    export default {
+    name: 'MainHeader',
+    data() {
+            return{
+                logo,
+                links:[
+                    {
+                    text:"CHARACTERS",
+                    url:"#",
+                    active: false
+                    },
+                    {
+                    text:"COMICS",
+                    url:"#",
+                    active: true
+                    },
+                    {
+                    text:"MOVIES",
+                    url:"#",
+                    active: false
+                    },
+                    {
+                    text:"TV",
+                    url:"#",
+                    active: false
+                    },
+                    {
+                    text:"GAMES",
+                    url:"#",
+                    active: false
+                    },
+                    {
+                    text:"COLLECTIBLES",
+                    url:"#",
+                    active: false
+                    },
+                    {
+                    text:"VIDEOS",
+                    url:"#",
+                    active: false
+                    },
+                    {
+                    text:"FANS",
+                    url:"#",
+                    active: false
+                    },
+                    {
+                    text:"NEWS",
+                    url:"#",
+                    active: false
+                    },
+                    {
+                    text:"SHOP",
+                    url:"#",
+                    active: false
+                    },
+                ]
+            }
         }
     }
-}
 </script>
 
 <style scoped lang="scss">
@@ -88,6 +94,12 @@ export default {
 
     header{
         background: white;
+
+        .hero{
+            background-image: url(../assets/img/jumbotron.jpg);
+            background-size: cover;
+            height: 400px;
+        }
     }
     .container{
         display: flex;
